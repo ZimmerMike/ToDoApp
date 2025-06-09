@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import { IonApp, IonRouterOutlet, IonHeader, IonToolbar, IonTitle, IonButtons, IonButton, IonContent } from '@ionic/angular/standalone';
 import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
 
 @Component({
@@ -9,8 +9,15 @@ import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
   imports: [
     AmplifyAuthenticatorModule,
     IonApp,
-    IonRouterOutlet
+    IonButton,
+    IonButtons,
+    IonContent,
+    IonHeader,
+    IonRouterOutlet,
+    IonTitle,
+    IonToolbar,
   ],
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   constructor() {}
